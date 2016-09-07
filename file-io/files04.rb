@@ -20,6 +20,8 @@ while working do
     readFile.close()
     writeFile.close()
   end
+
+  sleep 0.01
 end
 
 # Copy the temp file back into the original file
@@ -41,6 +43,8 @@ while working do
     tempFile.close()
     destFile.close()
   end
+
+  sleep 0.01
 end
 
 File.delete("./testfile.tmp.txt")

@@ -7,13 +7,13 @@ while reading do
   line = file.gets()
 
   if !line.nil? then
-    puts "Got a line: #{line}"
+    puts "Got a error: #{line}" if line=~/error/
   else
     reading = false
     file.close()
   end
 
-  sleep 0.5
+  sleep 0.1
 end
 
 # cat file.txt
