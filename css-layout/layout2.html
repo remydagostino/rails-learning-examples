@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hero Banner Layout</title>
+
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: Verdana, sans-serif;
+      height: 100%;
+      color: #333;
+    }
+
+    .link-reset,
+    .link-reset:hover,
+    .link-reset:active,
+    .link-reset:visited {
+      color: inherit;
+      text-decoration: none;
+      outline: 0;
+    }
+
+    .app {
+      height: 100%;
+    }
+
+    .section {
+      width: 800px;
+      max-width: 80%;
+      padding: 20px;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+
+    .section-separator {
+      border-bottom: 1px solid #e4e4e4;
+    }
+
+    .hero-section {
+      padding-top: 80px;
+      width: 100%;
+      max-width: 100%;
+      min-height: 100%;
+      background: #BAEDFF;
+      position: relative;
+    }
+
+    .hero-section-title {
+      text-align: center;
+      font-size: 52px;
+      margin-bottom: 50px;
+    }
+
+    .hero-section-action-wrapper {
+      position: absolute;
+      bottom: 100px;
+      width: 100%;
+      left: 0;
+      text-align: center;
+    }
+
+    .hero-section-action {
+      display: inline-block;
+      background: #f2f2f2;
+      padding: 20px;
+      box-shadow: 0px 6px 0px 0px #fff;
+    }
+
+    .hero-section-action:hover,
+    .hero-section-action:focus {
+      background: #e4e4e4;
+      box-shadow: 0px 6px 0px 0px #f2f2f2;
+    }
+
+    .hero-section-face-wrapper {
+      width: 30%;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 40px;
+      border: 5px solid #fff;
+    }
+
+    .hero-section-face {
+      height: 0;
+      padding-top: 100%;
+      position: relative;
+    }
+
+    .hero-section-face > img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      margin: auto;
+    }
+
+    .hero-navigation {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 60px;
+      background: #fff;
+    }
+
+    .hero-nav-items {
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero-nav-item {
+      float: left;
+      line-height: 60px;
+      padding: 0 40px;
+      position: relative;
+    }
+
+    .hero-nav-item:hover,
+    .hero-nav-item:focus {
+      text-decoration: underline;
+    }
+
+    .hero-nav-item::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 10px;
+      bottom: 10px;
+      border-right: 1px solid #e4e4e4;
+    }
+
+    .hero-nav-item:last-child::after {
+      border-right: none;
+    }
+
+    .feature-text {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="section hero-section">
+      <div class="hero-navigation">
+        <div class="hero-nav-items">
+          <a href="#" class="hero-nav-item link-reset">Home</a>
+          <a href="#" class="hero-nav-item link-reset">Features</a>
+          <a href="#" class="hero-nav-item link-reset">Bunnies?</a>
+        </div>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-section-title">Fluffy Kittens</h1>
+        <div class="hero-section-face-wrapper">
+          <div class="hero-section-face">
+            <img src="/img/300x300.jpeg">
+          </div>
+        </div>
+        <div class="hero-section-action-wrapper">
+          <a class="hero-section-action link-reset" href="#features">They are great!</a>
+        </div>
+      </div>
+    </div>
+    <div class="section section-separator" id="features">
+      <div class="features">
+        <div class="feature">
+          <h2 class="feature-title">#1</h2>
+          <p class="feature-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="feature">
+          <h2 class="feature-title">#2</h2>
+          <p class="feature-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="feature">
+          <h2 class="feature-title">#3</h2>
+          <p class="feature-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Gushing praise</h2>
+      <p class="feature-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p class="feature-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p class="feature-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twitter cards</title>
+
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      font-family: Helvetica, Arial, sans-serif;
+      color: #333;
+    }
+
+    .tweets {
+      width: 60%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .tweet {
+      background: #fff;
+      box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.2);
+      padding: 20px;
+      position: relative;
+      margin-bottom: 15px;
+    }
+
+    .tweet-image-container {
+      float: left;
+      width: 20%;
+      max-width: 100px;
+      min-width: 60px;
+    }
+
+    .tweet-image {
+      position: relative;
+      height: 0px;
+      padding-top: 100%;
+      overflow: hidden;
+      border: 1px solid #e4e4e4;
+    }
+
+    .tweet-image > img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      margin: auto;
+    }
+
+    .tweet-content {
+      margin-bottom: 10px;
+      padding: 12px;
+      overflow: hidden;
+    }
+
+    .tweet-user,
+    .tweet-text {
+      margin: 0;
+      padding: 0;
+    }
+
+    .tweet-user {
+      margin-bottom: 6px;
+    }
+
+    .tweet-text {
+      line-height: 1.4;
+    }
+
+    .tweet-footer {
+      font-size: 11px;
+      text-align: right;
+      font-style: italic;
+      font-weight: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <div class="tweets">
+    <div class="tweet">
+      <div class="tweet-image-container">
+        <div class="tweet-image">
+          <img src="/img/200x300.jpeg">
+        </div>
+      </div>
+      <div class="tweet-content">
+        <h2 class="tweet-user">@batman</h2>
+        <p class="tweet-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="tweet-footer">
+         1 July 2016
+      </div>
+    </div>
+    <div class="tweet">
+      <div class="tweet-image-container">
+        <div class="tweet-image">
+          <img src="/img/300x300.jpeg">
+        </div>
+      </div>
+      <div class="tweet-content">
+        <h2 class="tweet-user">@eowyn</h2>
+        <p class="tweet-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="tweet-footer">
+         1 July 2016
+      </div>
+    </div>
+    <div class="tweet">
+      <div class="tweet-image-container">
+        <div class="tweet-image">
+          <img src="/img/300x200.jpeg">
+        </div>
+      </div>
+      <div class="tweet-content">
+        <h2 class="tweet-user">@harry</h2>
+        <p class="tweet-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="tweet-footer">
+         1 July 2016
+      </div>
+    </div>
+    <div class="tweet">
+      <div class="tweet-image-container">
+        <div class="tweet-image">
+          <img src="/img/200x300.jpeg">
+        </div>
+      </div>
+      <div class="tweet-content">
+        <h2 class="tweet-user">@gandalf</h2>
+        <p class="tweet-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="tweet-footer">
+         1 July 2016
+      </div>
+    </div>
+  </div>
+</body>
+</html>
